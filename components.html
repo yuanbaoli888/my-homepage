@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 组件库 - 宝利设计系统</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .showcase-section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-main);
+        }
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .color-swatch {
+            height: 100px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: flex-end;
+            padding: 12px;
+            color: white;
+            font-size: var(--fs-12);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <div class="container" style="padding-top: 100px;">
+        <h1>设计系统组件展示</h1>
+        <p>基于 8pt 软栅格与现代色彩理论构建的 UI 组件库。</p>
+
+        <!-- 色彩展示 -->
+        <section class="showcase-section">
+            <h2>1. 色彩体系</h2>
+            <div class="showcase-grid">
+                <div class="color-swatch" style="background: var(--primary-600);">Primary 600</div>
+                <div class="color-swatch" style="background: var(--accent-500);">Accent 500</div>
+                <div class="color-swatch" style="background: var(--success);">Success</div>
+                <div class="color-swatch" style="background: var(--error);">Error</div>
+            </div>
+        </section>
+
+        <!-- 按钮展示 -->
+        <section class="showcase-section">
+            <h2>2. 按钮组件</h2>
+            <div class="showcase-grid" style="display: flex; gap: 16px;">
+                <button class="btn btn-primary">主要按钮</button>
+                <button class="btn btn-secondary">次要按钮</button>
+            </div>
+        </section>
+
+        <!-- 卡片展示 -->
+        <section class="showcase-section">
+            <h2>3. 卡片组件</h2>
+            <div class="showcase-grid">
+                <div class="hobby-card">
+                    <i data-lucide="sparkles"></i>
+                    <h3>示例卡片</h3>
+                    <p>这是一个重构后的卡片组件，支持微妙的阴影与悬停位移动效。</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">好评率</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 表单展示 -->
+        <section class="showcase-section">
+            <h2>4. 表单组件</h2>
+            <div style="max-width: 400px; margin-top: 24px;">
+                <div class="form-group">
+                    <label>输入框示例</label>
+                    <input type="text" placeholder="请输入内容...">
+                </div>
+                <div class="form-group" style="margin-top: 16px;">
+                    <label>文本域示例</label>
+                    <textarea rows="3" placeholder="请输入长文本..."></textarea>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

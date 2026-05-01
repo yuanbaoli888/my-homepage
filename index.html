@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝利 | AIGC 工程师</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Lucide 图标库 (可选) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="light-theme">
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#hobbies">核心关注</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="切换主题">
+                <i data-lucide="sun" id="theme-icon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 姓名展示区 -->
+        <section id="hero" class="fade-in">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>你好，我是 <span>宝利</span></h1>
+                    <p class="subtitle">AIGC 工程师 @ 杭州光原智数科技</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">与我联系</a>
+                        <a href="#about" class="btn btn-secondary">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="0_0 (12).png" alt="宝利的个人照片">
+                </div>
+            </div>
+        </section>
+
+        <!-- 个人介绍区 -->
+        <section id="about" class="fade-in section-padding">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>大家好，我是来自杭州光原智数科技的 AIGC 工程师 宝利。我们公司以 AI 技术为核心、优质内容为导向，打造 “创意 + 技术 + 工业化” 的影视内容新生态，而我核心负责 AIGC 技术在影视全链路的落地与定制化解决方案研发。</p>
+                        <p>我的工作覆盖了从剧本优化、数字人物资产包生成、AI 分镜设计，到 AI 虚拟拍摄、智能剪辑包装的全流程技术实现，服务过企业品牌宣传、文旅数字内容、商业广告、AI 短剧漫剧等多个场景，也全程参与了《西湖摆渡人》《梦魇索命》、哈尔滨啤酒系列等公司标杆项目的 AIGC 技术落地。</p>
+                        <p>同时，我也深度参与公司的产教融合业务，为高校和企业的 AI 创作教育培训提供技术支撑，助力培养复合型 AI 创作人才。非常期待能和各位一起，探索 AI 技术与影视内容融合的更多可能性。</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">AIGC</span>
+                            <span class="stat-label">核心领域</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">标杆项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">影视+AI</span>
+                            <span class="stat-label">技术落地</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心关注 -->
+        <section id="hobbies" class="fade-in section-padding bg-alt">
+            <div class="container">
+                <h2 class="section-title">核心关注</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <i data-lucide="sparkles"></i>
+                        <h3>AIGC 创作</h3>
+                        <p>探索 AI 在内容创作中的无限可能，从剧本到成片的自动化流程。</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i data-lucide="video"></i>
+                        <h3>影视工业化</h3>
+                        <p>致力于通过 AI 技术提升影视制作的效率与创意表达，打造新生态。</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i data-lucide="users"></i>
+                        <h3>产教融合</h3>
+                        <p>助力高校与企业培养复合型 AI 创作人才，分享行业前沿技术。</p>
+                    </div>
+                    <div class="hobby-card">
+                        <i data-lucide="cpu"></i>
+                        <h3>方案研发</h3>
+                        <p>为影视全链路提供定制化的 AIGC 落地与技术支撑解决方案。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式区 -->
+        <section id="contact" class="fade-in section-padding">
+            <div class="container">
+                <h2 class="section-title">联系方式</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>如果您有任何合作意向或技术问题，欢迎随时联系我！</p>
+                        <ul class="contact-list">
+                            <li>
+                                <i data-lucide="mail"></i>
+                                <span>185208198@qq.com</span>
+                            </li>
+                            <li>
+                                <i data-lucide="github"></i>
+                                <span>github.com/baoli-aigc</span>
+                            </li>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <span>中国 · 杭州</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" required placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" required placeholder="您的电子邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" rows="4" required placeholder="您想对我说的话"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 宝利. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 初始化 Lucide 图标
+        lucide.createIcons();
+    </script>
+</body>
+</html>
